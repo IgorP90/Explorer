@@ -1,0 +1,49 @@
+﻿@model TrialWorkOnASPNetCoreMVC.Models.DirectoryData
+
+@{
+    ViewData["Title"] = "Explorer";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Content/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <table>
+
+            <th>Название</th>
+            <th>Директория</th>
+            <th>Размер</th>
+
+            @for (int i = 0; i < Model.FileNames.Length; i++)
+            {
+                <tr>
+                    <td>
+                        <ul>
+                            <li>@Model.DirName[i]</li>
+                        </ul> 
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li><a href="/Home/Explorer/@Model.FolderNames[i]"> @Model.FolderNames[i]</a></li>
+                        </ul>
+                        @Model.FileNames[i]
+                    </td>
+
+                    <td>
+                        @Model.FileNames[i]
+                        @Model.FileSizes[i]
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+</body>
+</html>
+
