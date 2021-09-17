@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyVisualStudio\\TrialWorkOnASPNetCoreMVC\\Test_task_for_STMLabs\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj": {}
+    "D:\\MyVisualStudio\\Explorer\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj": {}
   },
   "projects": {
-    "D:\\MyVisualStudio\\TrialWorkOnASPNetCoreMVC\\Test_task_for_STMLabs\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj": {
+    "D:\\MyVisualStudio\\Explorer\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyVisualStudio\\TrialWorkOnASPNetCoreMVC\\Test_task_for_STMLabs\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj",
+        "projectUniqueName": "D:\\MyVisualStudio\\Explorer\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj",
         "projectName": "TrialWorkOnASPNetCoreMVC",
-        "projectPath": "D:\\MyVisualStudio\\TrialWorkOnASPNetCoreMVC\\Test_task_for_STMLabs\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj",
+        "projectPath": "D:\\MyVisualStudio\\Explorer\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj",
         "packagesPath": "C:\\Users\\Игорь\\.nuget\\packages\\",
-        "outputPath": "D:\\MyVisualStudio\\TrialWorkOnASPNetCoreMVC\\Test_task_for_STMLabs\\TrialWorkOnASPNetCoreMVC\\obj\\",
+        "outputPath": "D:\\MyVisualStudio\\Explorer\\TrialWorkOnASPNetCoreMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Игорь\\AppData\\Roaming\\NuGet\\NuGet.Config",

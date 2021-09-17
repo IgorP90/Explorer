@@ -17,25 +17,34 @@
             <th>Директория</th>
             <th>Размер</th>
 
-            @for (int i = 0; i < Model.FileNames.Length; i++)
+            @for (int i = 0; i < Model.FolderNames.Length; i++)
             {
                 <tr>
                     <td>
-                        <ul>
-                            <li>@Model.DirName[i]</li>
-                        </ul> 
+                        <p>@Model.DirName</p>
                     </td>
 
                     <td>
-                        <ul>
-                            <li><a href="/Home/Explorer/@Model.FolderNames[i]"> @Model.FolderNames[i]</a></li>
-                        </ul>
-                        @Model.FileNames[i]
+                        <p><a href="/Home/Explorer/@Model.FolderNames[i]"> @Model.FolderNames[i]</a></p>
                     </td>
 
                     <td>
-                        @Model.FileNames[i]
-                        @Model.FileSizes[i]
+                        <p>@Model.FolderSizes[i]</p>
+                    </td>
+                </tr>        
+            }
+
+            @for (int i = 0; i < Model.FileNames.Length; i++)
+            {         
+                <tr>
+                    <td>
+                        <p></p>
+                    </td>
+                    <td>
+                        <p>@Model.FileNames[i]</p>
+                    </td>
+                    <td>
+                        <p>@Model.FileSizes[i]</p>
                     </td>
                 </tr>
             }

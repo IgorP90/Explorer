@@ -26,12 +26,9 @@ namespace TrialWorkOnASPNetCoreMVC.Controllers
 
         public IActionResult Explorer(string dir = @"C:\")
         {
-            string dirName = dir;
+            string[] drive = Environment.GetLogicalDrives();
 
-            /*long diskSpace = (from directory in Directory.EnumerateDirectories(dirName)
-                              from file in Directory.EnumerateFiles(directory)
-                              select file)
-             .Sum(file => new FileInfo(file).Length);*/
+            string dirName = dir;
 
             long dirSize = DirSize(new DirectoryInfo(dirName)); 
 
@@ -64,57 +61,41 @@ namespace TrialWorkOnASPNetCoreMVC.Controllers
             return View(dirData);
         }
 
-        private long FileSize(DirectoryInfo dirName)
-        {
-            long size = 0;
-
-            FileInfo[] files = dirName.GetFiles();
-            foreach (FileInfo file in files)
-            {
-                try
-                {
-                    size += file.Length;
-                }
-                catch (Exception)
-                {
-
-                    continue;
-                }
-            }
-            return size;
-        }
         private long DirSize(DirectoryInfo dirName)
         {
             long size = 0;
 
-            FileInfo[] files = dirName.GetFiles();
-            foreach (FileInfo file in files)
+            if (!Directory.Exists($"{dirName}"))
             {
-                try
+                return size;
+            }
+
+            FileInfo[] files;
+            DirectoryInfo[] dirs;
+            try
+            {
+                files = dirName.GetFiles();
+                dirs = dirName.GetDirectories();
+
+
+                foreach (FileInfo file in files)
                 {
                     size += file.Length;
                 }
-                catch (Exception)
-                {
 
-                    continue;
-                }
-            }
-
-            DirectoryInfo[] dirs = dirName.GetDirectories();
-            foreach (DirectoryInfo dir in dirs)
-            {
-                try
+                foreach (DirectoryInfo dir in dirs)
                 {
                     size += DirSize(dir);
                 }
-                catch (Exception)
-                {
-                    continue;
-                }
             }
+            catch (Exception ex)
+            {
+                Debug.Print($"! {ex}");
+            }
+
             return size;
         }
+  
 
         #region 
         public IActionResult Privacy()

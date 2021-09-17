@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IMrahbhZ7qT5FxdYNR91DRRhosMVKsdqpNM/fMvKlywB94OiBv3sDCpSoWH547cmA7gouWMM0U+MMH/guFZfjw==",
+  "dgSpecHash": "vLrNGo4mWYfQ2B34GqxB+SA5NPGBoSVxHdM5fBfQlQHnuhDxZ6xpDjP9dMqaU6byhqb1uz5ctq0hcV+dUvnHkg==",
   "success": true,
-  "projectFilePath": "D:\\MyVisualStudio\\TrialWorkOnASPNetCoreMVC\\Test_task_for_STMLabs\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj",
+  "projectFilePath": "D:\\MyVisualStudio\\Explorer\\TrialWorkOnASPNetCoreMVC\\TrialWorkOnASPNetCoreMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Игорь\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Игорь\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
